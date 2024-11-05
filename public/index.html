@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button id="moveXPlus">Move X+</button>
+        <button id="moveXMinus">Move X-</button>
+        <button id="moveYPlus">Move Y+</button>
+        <button id="moveYMinus">Move Y-</button>
+        <button id="moveZPlus">Move Z+</button>
+        <button id="moveZMinus">Move Z-</button>
+    
+        <button id="rotateXPlus">Rotate X+</button>
+        <button id="rotateXMinus">Rotate X-</button>
+        <button id="rotateYPlus">Rotate Y+</button>
+        <button id="rotateYMinus">Rotate Y-</button>
+        <button id="rotateZPlus">Rotate Z+</button>
+        <button id="rotateZMinus">Rotate Z-</button>
+        <button id="scaleUp">Stretch</button>
+        <button id="scaleDown">Compress</button>
+
+
+        <!-- Добавляем кнопки для выбора оси симметрии -->
+        <button id="axisX">Symmetry X</button>
+        <button id="axisY">Symmetry Y</button>
+        <button id="axisZ">Symmetry Z</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
